@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/title"
+          android:text="设置"
+          />
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:text="遥控器"
+            />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:text="美国手"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rb2"
+                android:text="日本手"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_marginLeft="30dp"
+                android:text="中国手"
+                android:textSize="16sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+       <TextView
+           android:id="@+id/submit"
+           android:layout_gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="校准磁罗盘"
+           />
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="失控行为"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            >
+
+            <RadioButton
+
+                android:id="@+id/rb4"
+                android:text="返航"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb5"
+
+                android:text="悬停"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb6"
+                android:text="继续"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
